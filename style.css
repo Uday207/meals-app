@@ -1,0 +1,132 @@
+
+* {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #d1c4e9;
+    background-image: url("images/kk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color:  #9c27b0  ;
+}
+.navimg img {
+    animation-name: rotating;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* animation for bell image */
+@keyframes rotating {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+/* favourites text */
+#fav {
+    color: white;
+    animation-name: flexible;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+}
+/* animation for favoutites text */
+@keyframes flexible {
+    
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.searchbox {
+    margin: 0;
+    width: 40%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: .8rem 2rem .8rem 1rem;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    color: black;
+}
+
+.searchbtn {
+
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: blue;
+    margin: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 3.2rem;
+    padding: .8rem 2rem .8rem 1rem;
+    margin-left: -0.4%;
+    
+}
+
+i {
+    color: white;
+}
+
+.card {
+    background-color: #23212E;
+    border-radius: 20px;
+    color: #CFCECE
+}
+
+.btn-warning {
+    background: rgb(241, 161, 49);
+    background: linear-gradient(90deg, rgba(241, 161, 49, 1) 1%, rgba(244, 149, 44, 1) 30%, rgba(250, 197, 63, 1) 66%);
+    border-radius: 20px;
+    padding: 0.4rem 2rem;
+    color: white!important;
+}
+.white{
+    color: white;
+}
+.food-wid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-title-heading {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    background: rgb(241, 161, 49);
+    background: linear-gradient(90deg, rgba(241, 161, 49, 1) 1%, rgba(244, 149, 44, 1) 30%, rgba(250, 197, 63, 1) 66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#recipe-intro{
+    font-weight: lighter!important;
+    word-spacing: 0.3rem;
+    
+}
+
