@@ -39,7 +39,7 @@ function showMealList() {
                     <div class="card-body">
                         <h5 class="card-title ">${element.strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More Details</button>
+                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More details</button>
                             <button id="main${element.idMeal}" class="btn btn-outline-success active" onclick="addRemoveToFavList(${element.idMeal})" style="border-radius:50%"><i class="fa-solid fa-heart"></i></button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function showMealList() {
                     <div class="card-body">
                         <h5 class="card-title">${element.strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More Details</button>
+                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More details</button>
                             <button id="main${element.idMeal}" class="btn btn-outline-success" onclick="addRemoveToFavList(${element.idMeal})" style="border-radius:50%"><i class="fa-solid fa-heart"></i></button>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ function showMealList() {
             </div>
             `;
         }
-        document.getElementById("recipe-list").innerHTML = html;
+        document.getElementById("Moredetails-list").innerHTML = html;
     });
 }
 
@@ -104,7 +104,7 @@ async function showMealsDetails(id) {
 
 
                     <h5>Instruction :</h5>
-                    <p class="card-text" id="recipe-intro">
+                    <p class="card-text" id="Moredetails-intro">
                         ${data.meals[0].strInstructions}</p>
                     <a href="${data.meals[0].strYoutube}"  target="_blank" class="btn btn-warning">Video</a>
 
@@ -118,7 +118,7 @@ async function showMealsDetails(id) {
 
         `;
     });
-    document.getElementById("recipe-list").innerHTML = html;
+    document.getElementById("Moredetails-list").innerHTML = html;
 }
 
 
@@ -153,7 +153,7 @@ async function showFavMealList() {
                     <div class="card-body">
                         <h5 class="card-title">${data.meals[0].strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showFavMealDetails(${data.meals[0].idMeal})">More Details</button>
+                            <button type="button" class="btn btn-warning" onclick="showFavMealDetails(${data.meals[0].idMeal})">More details</button>
                             <button id="main${data.meals[0].idMeal}" class="btn btn-outline-danger" onclick="addRemoveToFavList(${data.meals[0].idMeal})" style="border-radius:50%"><i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -190,7 +190,7 @@ async function showFavMealDetails(id) {
 
 
                     <h5>Instruction :</h5>
-                    <p class="card-text" id="recipe-intro">
+                    <p class="card-text" id="Moredetails-intro">
                         ${data.meals[0].strInstructions}</p>
                     <a href="${data.meals[0].strYoutube}"  target="_blank" class="btn btn-warning">Video</a>
                 </div>
