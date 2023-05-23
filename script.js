@@ -39,7 +39,7 @@ function showMealList() {
                     <div class="card-body">
                         <h5 class="card-title ">${element.strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">Recipe</button>
+                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More Details</button>
                             <button id="main${element.idMeal}" class="btn btn-outline-success active" onclick="addRemoveToFavList(${element.idMeal})" style="border-radius:50%"><i class="fa-solid fa-heart"></i></button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function showMealList() {
                     <div class="card-body">
                         <h5 class="card-title">${element.strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">Recipe</button>
+                            <button type="button" class="btn btn-warning" onclick="showMealsDetails(${element.idMeal})">More Details</button>
                             <button id="main${element.idMeal}" class="btn btn-outline-success" onclick="addRemoveToFavList(${element.idMeal})" style="border-radius:50%"><i class="fa-solid fa-heart"></i></button>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ async function showFavMealList() {
                     <div class="card-body">
                         <h5 class="card-title">${data.meals[0].strMeal}</h5>
                         <div class="d-flex justify-content-between mt-5">
-                            <button type="button" class="btn btn-warning" onclick="showFavMealDetails(${data.meals[0].idMeal})">Recipe</button>
+                            <button type="button" class="btn btn-warning" onclick="showFavMealDetails(${data.meals[0].idMeal})">More Details</button>
                             <button id="main${data.meals[0].idMeal}" class="btn btn-outline-danger" onclick="addRemoveToFavList(${data.meals[0].idMeal})" style="border-radius:50%"><i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
                         </div>
